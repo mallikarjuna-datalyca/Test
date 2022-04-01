@@ -11,6 +11,7 @@ def downloadFile ():
     path = r'E:\datalyca1\\flaskServerTesting1\\flaskServerTesting\static\\uploads\surya.mp4'
     return send_file(path, as_attachment=True)
 
+
 @app.route('/')
 def upload_form():
     return render_template('upload.html')
